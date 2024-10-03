@@ -1,55 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>EasyGate - Automatic Gate Opener</title>
+    <meta name="description" content="SafeGate - Effortless Access, Uncompromised Security.">
+    <title>SafeGate - Effortless Access, Uncompromised Security</title>
+
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <h1>EasyGate</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>SafeGate</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hero">
+                <h2>Effortless Access, Uncompromised Security</h2>
+                <p>SafeGate offers hands-free, automatic vehicle detection with advanced UHF RFID technology for secure
+                    and convenient gate access.</p>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section id="hero">
-            <h2>Welcome to EasyGate</h2>
-            <p>The smart way to automatically open your electric gate using IoT technology.</p>
-        </section>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About SafeGate</h2>
+            <p>SafeGate revolutionizes gate control by providing a seamless, secure, and automatic access solution. No
+                more fiddling with remotes or apps—SafeGate ensures that your vehicle is detected automatically, giving
+                you peace of mind with every entry and exit.</p>
+        </div>
+    </section>
 
-        <section id="about">
-            <h2>About EasyGate</h2>
-            <p>EasyGate is an IoT-based system that detects an approaching vehicle and automatically opens the gate. No more remotes or manual input—just drive up, and the gate opens by itself!</p>
-        </section>
-
-        <section id="features">
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
             <h2>Features</h2>
-            <ul>
-                <li>Vehicle Detection using a smart stick</li>
-                <li>Automatic gate opening</li>
-                <li>Easy installation and use</li>
-                <li>IoT-based solution</li>
-            </ul>
-        </section>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>Hands-Free Access</h3>
+                    <p>SafeGate detects your vehicle automatically, eliminating the need for apps or remotes.</p>
+                </div>
+                <div class="feature">
+                    <h3>Advanced Security</h3>
+                    <p>Powered by UHF RFID technology, SafeGate ensures only authorized vehicles are granted access.</p>
+                </div>
+                <div class="feature">
+                    <h3>Easy Installation</h3>
+                    <p>Quick and simple installation with minimal setup, making it easy to upgrade your security system.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="contact">
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
             <h2>Contact Us</h2>
-            <p>For inquiries and purchases, please <a href="mailto:info@eats.com">contact us via email</a>.</p>
-        </section>
-    </main>
+            <form action="https://formspree.io/f/example" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-    <footer>
-        <p>&copy; 2024 EasyGate. All Rights Reserved.</p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 SafeGate. All rights reserved.</p>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
+
 </html>

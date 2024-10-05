@@ -32,9 +32,11 @@ body {
     padding-bottom: 20px;
 }
 
-.logo h1 {
-    font-size: 2rem;
-    font-weight: bold;
+.logo img {
+    width: 150px;
+    /* Adjust logo size */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 .nav-links {

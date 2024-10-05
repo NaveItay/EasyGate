@@ -193,3 +193,10 @@ body {
     color: white;
     text-align: center;
 }
+
+.feature-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}

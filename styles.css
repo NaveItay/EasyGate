@@ -161,17 +161,27 @@ body {
     }
 
     .feature {
-        flex-basis: 45%;
-        /* Show 2 features in 1 row on mobile */
+        flex-basis: 45%; /* Show 2 features in 1 row on mobile */
         margin: 10px;
+    }
+
+    .feature p {
+        font-size: 0.8rem; /* Decreased font size for mobile */
     }
 }
 
 @media (max-width: 500px) {
+    .features-grid {
+        justify-content: space-between;
+    }
+
     .feature {
-        flex-basis: 100%;
-        /* Show 1 feature per row on very small screens */
-        margin: 10px 0;
+        flex-basis: 48%; /* Still show 2 features per row on very small screens */
+        margin: 10px;
+    }
+
+    .feature p {
+        font-size: 0.8rem; /* Maintain smaller font size for readability */
     }
 }
 

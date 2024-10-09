@@ -9,6 +9,9 @@
 
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Link to external JavaScript file -->
+    <script defer src="main.js"></script>
 </head>
 
 <body>
@@ -119,19 +122,6 @@
             <p>© 2024 EasyGate. All rights reserved.</p>
         </div>
     </footer>
-
-    <!-- JavaScript for Hamburger Menu Toggle -->
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        const mainContent = document.querySelector('.main-content');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.classList.toggle('active');
-            mainContent.classList.toggle('blur'); // Toggle blur effect on main content
-        });
-    </script>
 
 </body>
 

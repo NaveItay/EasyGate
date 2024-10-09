@@ -33,7 +33,7 @@ body {
 }
 
 .logo img {
-    width: 300px;
+    width: 150px;
     height: auto;
 }
 
@@ -221,11 +221,10 @@ body {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 70px;
+        top: 160px;
         right: 0;
         background-color: #333;
         width: 100%;
-        height: 100vh;
         justify-content: center;
         align-items: center;
         text-align: center;

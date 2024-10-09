@@ -161,12 +161,14 @@ body {
     }
 
     .feature {
-        flex-basis: 45%; /* Show 2 features in 1 row on mobile */
+        flex-basis: 45%;
+        /* Show 2 features in 1 row on mobile */
         margin: 10px;
     }
 
     .feature p {
-        font-size: 0.8rem; /* Decreased font size for mobile */
+        font-size: 0.8rem;
+        /* Decreased font size for mobile */
     }
 }
 
@@ -176,12 +178,14 @@ body {
     }
 
     .feature {
-        flex-basis: 48%; /* Still show 2 features per row on very small screens */
+        flex-basis: 48%;
+        /* Still show 2 features per row on very small screens */
         margin: 10px;
     }
 
     .feature p {
-        font-size: 0.8rem; /* Maintain smaller font size for readability */
+        font-size: 0.8rem;
+        /* Maintain smaller font size for readability */
     }
 }
 
@@ -300,4 +304,11 @@ body {
 
 .hamburger.active .bar:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Blur effect when the menu is active */
+.main-content.blur {
+    filter: blur(5px);
+    /* Adjust blur strength */
+    transition: filter 0.3s ease;
 }

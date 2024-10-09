@@ -33,8 +33,14 @@ body {
 }
 
 .logo img {
-    width: 150px;
+    width: 250px; /* Default for larger screens */
     height: auto;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 150px; /* For mobile view */
+    }
 }
 
 .nav-links {

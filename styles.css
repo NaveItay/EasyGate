@@ -139,6 +139,34 @@ body {
     font-size: 1.1rem;
 }
 
+.feature-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Responsive Features Section */
+@media (max-width: 768px) {
+    .features-grid {
+        justify-content: space-around;
+    }
+
+    .feature {
+        flex-basis: 45%;
+        /* Show 2 features in 1 row on mobile */
+        margin: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .feature {
+        flex-basis: 100%;
+        /* Show 1 feature per row on very small screens */
+        margin: 10px 0;
+    }
+}
+
 /* Contact Section */
 .contact-section {
     padding: 60px 20px;

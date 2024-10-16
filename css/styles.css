@@ -367,7 +367,18 @@ p {
 .why-easygate-section {
     padding: 60px 20px;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #fff;
+    /* Change to white to alternate background colors */
+}
+
+.why-easygate-section h2 {
+    font-size: 2rem;
+    /* Ensure consistency with other sections */
+    margin-bottom: 40px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    /* Bold title */
 }
 
 .why-easygate-card {
@@ -379,7 +390,8 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: #fff;
+    background: #f9f9f9;
+    /* Light background for cards */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -398,6 +410,38 @@ p {
     max-width: 400px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* CONTACT US SECTION */
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    /* Change to light gray to alternate background colors */
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    /* Consistent bold title */
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact-section a {
+    color: #0072ff;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive Design */

@@ -1,16 +1,26 @@
 /* homepage-video-styles.css */
 
-.video-section {
+.video-container {
     position: relative;
-    width: 100%;
+    width: 80%;
+    max-width: 800px;
+    /* Maximum width for larger screens */
+    margin: 40px auto;
+    /* Center horizontally and add vertical spacing */
     overflow: hidden;
+    border-radius: 15px;
+    /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
 }
 
-.video-section video {
+.video-container video {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
+    border-radius: 15px;
+    /* Match the container's rounded corners */
 }
 
 /* Hide Video Controls Across Different Browsers */

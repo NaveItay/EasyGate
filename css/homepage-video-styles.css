@@ -2,10 +2,10 @@
 
 .video-container {
     position: relative;
-    width: 80%;
+    width: 100%;
     max-width: 800px;
-    /* Maximum width for larger screens */
-    margin: 40px auto;
+    /* Adjust as needed */
+    margin: 20px auto;
     /* Center horizontally and add vertical spacing */
     overflow: hidden;
     border-radius: 15px;

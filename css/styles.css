@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #333;
 }
@@ -53,9 +53,11 @@ body {
 }
 
 .nav-links a {
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     color: white;
     text-decoration: none;
+    text-transform: uppercase;
     transition: color 0.3s ease;
 }
 
@@ -63,6 +65,62 @@ body {
     color: #00c6ff;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 160px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        height: 100%;
+        justify-content: normal;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Hamburger menu animation */
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Hero Section */
 .hero {
     margin-top: 50px;
     padding: 50px 0;
@@ -109,6 +167,13 @@ body {
     display: block;
     object-fit: cover;
     border-radius: 15px;
+}
+
+/* Hide Video When Menu is Active */
+@media (max-width: 768px) {
+    .header.active .hero .video-container {
+        display: none;
+    }
 }
 
 /* Hide Video Controls Across Different Browsers */
@@ -240,62 +305,6 @@ video::-o-media-controls {
     text-align: center;
 }
 
-/* Hamburger Menu */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.hamburger .bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 4px;
-    transition: all 0.3s ease;
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 160px;
-        right: 0;
-        background-color: #333;
-        width: 100%;
-        height: 100%;
-        justify-content: normal;
-        align-items: center;
-        text-align: center;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 20px 0;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-}
-
-/* Hamburger menu animation */
-.hamburger.active .bar:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-
 /* Blur effect when the menu is active */
 .main-content.blur {
     filter: blur(5px);
@@ -309,48 +318,47 @@ html {
 /* Modern Scrollbar with Rounded Corners */
 ::-webkit-scrollbar {
     width: 8px;
-    /* Adjust the width of the scrollbar */
 }
 
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
-    /* Color for the scrollbar track */
     border-radius: 10px;
-    /* Round the corners of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #0072ff;
-    /* Blue color for the scrollbar thumb */
     border-radius: 10px;
-    /* Round the corners of the scrollbar thumb */
     border: 2px solid #f1f1f1;
-    /* Add padding around the thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: #005bb5;
-    /* Darker blue when hovered */
 }
 
 /* Firefox Scrollbar with Rounded Corners */
 * {
     scrollbar-width: thin;
     scrollbar-color: #0072ff #f1f1f1;
-    /* Thumb color and track color */
 }
 
 /* Optional: Round corners for Firefox scrollbar */
 html {
     scrollbar-gutter: stable both-edges;
-    /* Helps in consistent scrollbar styling */
 }
 
-/* Hide Video When Menu is Active */
-@media (max-width: 768px) {
+/* Additional Styling (Optional) */
+/* For headings */
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    /* Bold */
+}
 
-    /* Adjusted CSS Selector */
-    .header.active .hero .video-container {
-        display: none;
-    }
+/* For paragraphs */
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    /* Regular */
 }

@@ -362,3 +362,41 @@ p {
     font-weight: 400;
     /* Regular */
 }
+
+/* Algorithm Section */
+.algorithm-section {
+    padding: 60px 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.algorithm-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.algorithm-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: auto;
+    color: #666;
+    font-family: 'Poppins', sans-serif;
+}
+
+.algorithm-section p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .algorithm-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .algorithm-section p {
+        font-size: 1rem;
+    }
+}

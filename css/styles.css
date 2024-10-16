@@ -56,7 +56,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
     text-transform: uppercase;
     transition: color 0.3s ease;
 }

@@ -363,40 +363,61 @@ p {
     /* Regular */
 }
 
-/* Algorithm Section */
-.algorithm-section {
+/* WHY EASYGATE? SECTION */
+.why-easygate-section {
     padding: 60px 20px;
-    background-color: #f1f1f1;
     text-align: center;
+    background-color: #f9f9f9;
 }
 
-.algorithm-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+.why-easygate-card {
+    margin-bottom: 40px;
 }
 
-.algorithm-section p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    max-width: 800px;
-    margin: auto;
-    color: #666;
-    font-family: 'Poppins', sans-serif;
+.text-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.algorithm-section p:last-child {
-    margin-bottom: 0;
+.text-image.reverse {
+    flex-direction: row-reverse;
 }
 
+.text {
+    flex: 1;
+    padding: 0 20px;
+    font-size: 1.1rem;
+}
+
+.image img {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    .algorithm-section h2 {
-        font-size: 1.8rem;
+    .text-image {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .algorithm-section p {
-        font-size: 1rem;
+    .text-image.reverse {
+        flex-direction: column;
+    }
+
+    .text,
+    .image {
+        width: 100%;
+    }
+
+    .image img {
+        max-width: 100%;
+        margin: 20px 0;
     }
 }

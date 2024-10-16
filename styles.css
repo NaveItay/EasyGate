@@ -111,6 +111,13 @@ body {
     border-radius: 15px;
 }
 
+/* Hide Video When Menu is Active */
+@media (max-width: 768px) {
+    .hamburger.active~.hero .video-container {
+        display: none;
+    }
+}
+
 /* Hide Video Controls Across Different Browsers */
 video::-webkit-media-controls {
     display: none !important;
